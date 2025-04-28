@@ -1,0 +1,11 @@
+extends Area2D
+func _on_body_entered(body):
+	if body.name == "Player":
+		body.dew += 20 
+		queue_free()   
+
+func _ready() -> void:
+	pass # Replace with function body.
+
+func _process(delta: float) -> void:
+	pass
